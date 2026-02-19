@@ -139,64 +139,38 @@ p {
     border-radius: 12px;
 }
 
-/* ── Tablet and up ── */
-@media (min-width: 600px) {
-    #envelope {
-        width: 200px;
-    }
-
-    h1 {
-        font-size: 24px;
-    }
-
-    p {
-        font-size: 30px;
-    }
-
-    .cat {
-        width: 130px;
-    }
-
-    .btn, .yes-btn, .no-btn {
-        width: 100px;
-    }
-
-    .final-text {
-        font-size: 18px;
-    }
-
-    .letter-window {
-        padding-top: 140px;
-    }
+h1 {
+    font-size: 30px;
+    margin: 0;
 }
 
-/* ── Desktop ── */
-@media (min-width: 1024px) {
-    #envelope {
-        width: 200px;
-    }
+p {
+    font-size: 40px;
+    color: white;
+    margin: 0;
+}
 
-    h1 {
-        font-size: 30px;
-    }
+.cat {
+    width: 150px;
+    margin: 10px 0;
+    transition: width 0.4s ease;
+}
 
-    p {
-        font-size: 40px;
-    }
+.btn, .yes-btn, .no-btn {
+    width: 120px;
+}
 
-    .cat {
-        width: 150px;
-    }
+.letter-window {
+    padding-top: 180px;
+}
 
-    .btn, .yes-btn, .no-btn {
-        width: 120px;
-    }
-
-    .final-text {
-        font-size: 22px;
-    }
-
-    .letter-window {
-        padding-top: 180px;
-    }
+/* ── Mobile only ── */
+@media (max-width: 599px) {
+    h1 { font-size: 16px; }
+    p { font-size: 18px; }
+    .cat { width: 90px; }
+    .btn, .yes-btn, .no-btn { width: 70px; }
+    .letter-window { padding-top: 80px; gap: 2px; }
+    .final-text { font-size: 13px; }
+    #envelope { width: 130px; }
 }
